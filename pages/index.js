@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Intro from '../components/Intro'
 import Services from '../components/Services'
+import Testimonials from '../components/Testimonials';
 import { data } from '../data'
 
 export default function Home({data}) {
@@ -13,6 +14,7 @@ export default function Home({data}) {
       </Head>
       <Intro />
       <Services services={data}/>
+      <Testimonials />
     </div>
   )
 }
