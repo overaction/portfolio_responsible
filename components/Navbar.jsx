@@ -12,7 +12,7 @@ const Navbar = () => {
                     <Link href="/products/development">개발</Link>
                 </li>
                 <li className={styles.listItem}>
-                    <Link href="/products/product">제품</Link>
+                    <Link href="/products/production">제품</Link>
                 </li>
                 <li className={styles.listItem}>
                     <Link href="/products/photography">포토그래피</Link>
