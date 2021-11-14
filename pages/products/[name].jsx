@@ -10,11 +10,10 @@ const Product = ({product}) => {
                 {product.images.map(img => (
                     <div key={img.id} className={styles.imgContainer}>
                         <Image
+                            className={styles.img}
                             src={img.url}
-                            width="100%"
-                            height="100%"
                             objectFit="cover"
-                            layout="responsive"
+                            layout="fill"
                         />
                     </div>
                 ))}

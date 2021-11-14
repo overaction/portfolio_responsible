@@ -1,6 +1,7 @@
 .container {
     display: flex;
     padding: 50px;
+    height: 80vh;
 }
 
 .cardL {
@@ -17,6 +18,7 @@
     width: 30%;
     margin: 5px;
     background-color: green;
+    position: relative;
 }
 
 .imgContainer:nth-child(3) {
@@ -37,4 +39,43 @@
     border-radius: 10px;
     margin-top: 50px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .title {
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    .cardS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgContainer {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .button {
+        margin: 20px 0;
+    }
+
+    .cardL::before {
+        content: "프로젝트";
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
